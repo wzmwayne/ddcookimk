@@ -1,0 +1,36 @@
+{
+  "name": "ddcookimk",
+  "version": "1.0.0",
+  "description": "抖音 Web 访客凭据（ttwid / UIFID_TEMP）的组装与校验：ttwid 走公开注册端点，UIFID_TEMP 手工获取，校验交给 vidlink 端到端确认",
+  "type": "commonjs",
+  "bin": {
+    "ddcookimk": "bin/ddcookimk.js"
+  },
+  "engines": {
+    "node": ">=18.14"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "DISCLAIMER.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "node --check bin/ddcookimk.js && node --check lib/cookie.js && node --check lib/ttwid.js && node --check lib/verify.js"
+  },
+  "keywords": [
+    "douyin",
+    "cookie",
+    "ttwid",
+    "uifid",
+    "vidlink",
+    "interoperability"
+  ],
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wzmwayne/ddcookimk.git"
+  }
+}

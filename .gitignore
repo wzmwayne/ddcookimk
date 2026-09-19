@@ -1,0 +1,11 @@
+# 依赖与产物
+node_modules/
+
+# 本地凭据：任何情况下都不要把 Cookie 提交进来
+.cookie
+cookie.txt
+*.local
+
+# 日志与系统
+*.log
+.DS_Store
